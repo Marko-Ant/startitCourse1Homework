@@ -1,0 +1,42 @@
+body {
+	transition: all 0.4s ease-in-out;
+	background-color: black;
+}
+
+h2 {
+	color:#446644;
+}
+
+p {
+	font-family: "Janson", "Times New Roman", Serif;
+	font-size:18px;
+	font-style:italic;
+	padding:20px;
+	border: 3px solid #335533;
+	border-radius: 15px;
+	width:51%;
+}
+
+p:hover {
+	color: #EEEEEE;
+}
+
+img {
+	opacity:0;
+	width:100%;
+}
+
+img:hover {
+	opacity:1;
+}
+
+.left {
+	float:left;
+	text-align:left;
+}
+
+.right {
+	float:right;
+	text-align:right;
+}
+

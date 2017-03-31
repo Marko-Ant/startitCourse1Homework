@@ -1,0 +1,156 @@
+body {
+	margin: 0;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+ul {
+	margin: 0;
+}
+
+.clear {
+	clear:both;
+}
+/* usual fixes of what normalize.css doesn't do for me 
+and some minor necessities*/
+
+div.header-container {
+	width: 100%;
+	height: 50px;
+	background-color: #6b6b47;
+	color: white;
+	text-align: right;
+	border-bottom:1px solid black;
+}
+
+.header-container h1 {
+	font-weight: 400;
+	margin-left: 10px;
+	display: inline-block;
+	float: left;
+	line-height: 10px;
+}
+
+.header-container ul {
+	list-style: none;
+}
+
+.header-container ul li {
+	line-height: 18px;
+	display: inline-block;
+	padding: 15px;
+	border: 1px solid #6b6b47;
+	background-color: #6b6b47;
+}
+
+.header-container ul li:hover {
+	color: #6b6b47;
+	background-color: white;
+	border-color: white;
+}
+
+.wrapper {
+	text-align: center;
+}
+
+article#prizemlje {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 700px;
+    padding: 0 0px;
+    border: 1px solid rgb(225,226,228);
+    border-radius: 3px;
+    box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.1294);
+    text-align: center;
+
+}
+
+.top-bar {
+	text-align: right;
+}
+
+.fa-times {
+	color: #AAAAAA;
+	line-height: 35px;
+	font-size: 25px;
+	margin-right: 15px;
+}
+
+.article-main {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.headline-container h3 {
+	color: #555555;
+	text-align: left;
+	padding-bottom: 15px;
+	border-bottom: 1px solid black;
+	text-transform: uppercase;
+}
+
+.article-main h4 {
+	color: #555555;
+	text-align: left;
+
+}
+
+.content-container p {
+	text-align: justify;
+	font-size: 15px;
+
+}
+
+.content-container img {
+	padding-left: 15px;
+	height: auto; 
+    width: auto; 
+    max-width: 400px; 
+    max-height: 450px;
+	display: inline-block;
+	float: right;
+}
+
+.table-container {
+	border-top: 1px solid black;
+}
+
+
+
+table {
+	width: 100%;
+	border-collapse: collapse
+}
+
+caption {
+	color: #555555;
+	text-align: left;
+	font-weight: 600;
+	line-height: 45px;
+	font-color: ;
+}
+
+td {
+	text-align: left;
+	padding-left: 6px;
+}
+
+thead {
+	color: white;
+	background-color: #c2c2a3;
+	border-bottom: 1px solid black;
+}
+
+tbody tr:nth-child(even) td:nth-child(odd) {
+    background-color: #EEE;
+}
+
+tbody tr:nth-child(odd) td:nth-child(even) {
+    background-color: #EEE;
+}

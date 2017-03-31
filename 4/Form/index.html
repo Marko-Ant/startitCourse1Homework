@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Forma</title>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+		<link  rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="form-box">
+				<form action="">
+					<h2><em>Putuj, Igumane!</em></h2>
+					<p>1. Kojim prevoznim sredstvom ste došli na predavanje danas ?</p>
+					<div class="radio-container">
+						<input type="radio" name="transport" value="walking" id="walking">
+						<label for="walking">Pešice</label>
+					</div>
+					<div class="radio-container">
+						<input type="radio" name="transport" value="car" id="car">
+						<label for="car">Kolima</label>
+					</div>
+					<div class="radio-container">
+						<input type="radio" name="transport" value="taxi" id="taxi">
+						<label for="taxi">Taksijem</label>
+					</div>
+					<div class="radio-container">
+						<input type="radio" name="transport" value="bus" id="bus">
+						<label for="bus">Autobusom</label>
+					</div>
+					<p>2. Koliko vremena vam je trebalo od kuće do predavanja?</p>
+					<div class="radio-container">
+						<input type="radio" name="time" value="<5min" id="<5min">
+						<label for="<min">Manje od 5 minuta</label>
+					</div>
+					<div class="radio-container">			
+						<input type="radio" name="time" value="5-15" id="5-15">
+						<label for="5-15">Između 5 i 15 minuta</label>
+					</div>
+					<div class="radio-container">
+						<input type="radio" name="time" value="15-30" id="15-30">
+						<label for="15-30">Između 15 do 30 minuta</label>
+					</div>
+					<div class="radio-container">
+						<input type="radio" name="time" value=">30" id=">30">
+						<label for=">30">Više od pola sata</label>
+					</div>
+					<p>3. Koja od navedenih sredstava prevoza smatrate prihvatljivim?</p>
+					<div class="radio-container">
+						<input type="checkbox" name="choice" value="choice-car" id="choice-car">
+						<label for="choice-car">Automobil</label>
+					</div>
+					<div class="radio-container">
+						<input type="checkbox" name="choice" value="choice-taxi" id="choice-taxi">
+						<label for="choice-taxi">Taksi</label>
+					</div>
+					<div class="radio-container">
+						<input type="checkbox" name="choice" value="choice-subway" id="choice-subway">
+						<label for="choice-subway">Podzemna železnica</label>
+					</div>
+					<div class="radio-container">
+						<input type="checkbox" name="choice" value="choice-bus" id="choice-bus">
+						<label for="choice-bus">Autobus</label>
+					</div>
+					<div class="radio-container">
+						<input type="checkbox" name="choice" value="choice-walking" id="choice-walking">
+						<label for="choice-walking">Pešice</label>
+					</div>
+
+					<div class="info-container">
+						<label for="name">Ime:</label>
+			  			<input type="text" name="name" id="name" placeholder="Ime Prezime" required>
+
+			  			<label for="email">E-mail:</label>
+			  			<input type="email" name="email" id="email" placeholder="email@server.com" required>
+			  			
+			  			<label for="comment">Komentar:</label>
+			  			<textarea id="comment" rows="5" cols="80"></textarea>
+
+		  			</div>
+	  				<input type="submit" value="Prosledi">
+	  			</form>
+	  		</div>
+	  	</div>
+	</body>
+</html>

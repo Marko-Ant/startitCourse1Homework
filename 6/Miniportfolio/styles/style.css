@@ -1,0 +1,409 @@
+/* 00. Contents */
+/* 01. Body and necessities */
+/* 02. Header */
+/* 02b. Header cosmetics */
+/* 03. Projects */
+/* 03b.About me */
+/* 03c.Contacts */
+/* 04. Tablet/Small laptop and up adjusted - Header expands */
+/* 05. Laptops and desktops - The projects split into two columns
+fancy color hover trick */
+
+
+
+/* 01. Body and necessities */
+
+html, body {
+	height: 100%;
+}
+
+.all-wrapper {
+	min-height: calc(100vh - 80px);
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #242424;
+	color: white;
+}
+
+a, a:hover, a:visited, a:focus {
+	color: white;
+	text-decoration: none;
+}
+
+li a.current {
+	color: brown;
+}
+
+.clear {
+	clear: both;
+}
+
+/* 02. Header */
+
+.header-background {
+	height: 300px;
+ 	background-image: url("../assets/images/Header.jpg");
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+ 	background-position: center center;
+ 	border-bottom: 3px solid black;
+ 	text-align: center;
+}
+
+h1.name {
+	font-size: 2.5em;
+	font-weight: 200;
+	margin: 15px 0 0 0;
+	color: white;
+	text-transform: uppercase;
+}
+
+.header-container {
+	position: relative;
+	top: 160px;
+	color: white;
+	text-align: left;
+	display: inline-block;
+}
+
+h3, nav ul li {
+	font-size: 1.3em;
+	font-weight: 100;
+	margin: 0;
+	color: white;
+	display: inline-block;
+}
+
+nav {
+	display: inline-block;
+}
+
+nav ul.menu {
+	padding: 0;
+	list-style: none;
+	text-align: left;
+	display: inline-block;
+}
+
+/* 02b. Header cosmetics */
+
+nav ul li:nth-child(2) {
+	margin: 0 6px;
+}
+
+/* 4 way shadow to give an outline effect to the letters */
+
+h1, h3, nav ul.menu, .header-container i {
+	text-shadow:
+	   -1px -1px 0 #000,
+	    1px -1px 0 #000,
+	   -1px  1px 0 #000,
+		1px  1px 0 #000;
+}
+
+.header-container i {
+	letter-spacing: 20px;
+	font-size: 35px;
+	display: inline-block;
+}
+
+h3 {
+	display: none;
+}
+
+.name a:hover, li a:hover {
+	color: #66AA66;
+}
+
+i.fa-facebook-square:hover {
+	color:  #3b5998;
+}
+
+i.fa-twitter:hover {
+	color:  #0084b4;
+}
+
+i.fa-envelope:hover {
+	color: #957651;
+}
+
+i.fa-phone:hover, i.fa-address-card:hover  {
+	color: brown;
+}
+
+
+/* 03. Main - Projects */
+
+.main {
+	margin: 10px auto;
+	width: 94%;
+}
+
+
+.project {
+	margin: 25px 0;
+	width: 100%;
+	transition: border-color 0.2s ease-in-out;
+	border: 2px solid #000;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.project img {
+	vertical-align: top;
+	width: 100%;
+}
+
+.project:hover, .header-background:hover {
+	transition: border-color 0.2s ease-in-out;
+	border-color: white;
+	
+}
+
+h4 {
+	margin: 4px 0;
+}
+
+.text p  {
+	margin: 4px 0;
+}
+
+div.text {
+	background-color: #242424;
+	padding: 10px;
+}
+
+footer {
+	box-sizing: border-box;
+	height: 50px;
+	padding: 15px 0 15px 0;
+	color: #555;
+	text-align: center;
+}
+
+/* 03b. About me */
+
+.about {
+	margin: 30px auto;
+	width: 94%;
+}
+
+.about img {
+	margin: 30px auto;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	display: block;
+
+}
+
+.about p {
+	margin: 25px 20px;
+	text-align: justify;
+}
+
+.about h4 {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* 03c. Contact */
+
+.contact-main {
+	margin: 30px auto;
+	width: 80%;
+}
+
+.contact-main p {
+	margin: 20px 0;
+	text-align: justify;
+}
+
+
+#contact-info h4 {
+	text-transform: uppercase;
+}
+
+#contact-details {
+	margin: 0 auto;
+}
+
+#contact-details ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+#contact-details .fa {
+	font-size: 2em;
+	line-height: 1.1em;
+	padding-right: 10px;
+}
+
+#contact-details a:nth-child(1):hover {
+	color:  #3b5998;
+}
+
+#contact-details a:nth-child(2):hover  {
+	color:  #0084b4;
+}
+
+#contact-details a:nth-child(3):hover {
+	color: #957651;
+}
+
+#contact-details a:nth-child(n+4):hover {
+	color: brown;
+}
+
+
+/* 04. Tablet/Small laptop and up adjusted - Header expands */
+
+@media screen and (min-width: 800px) {
+
+	.header-container {
+		width: 94%;
+		max-width: 1300px;
+		position: relative;
+		top: 242px;
+		height: 40px;
+		color: white;
+		display: inline-block;
+		text-align: right;
+	}	
+
+	h1.name {
+		margin-top: 25px;
+		margin-bottom: 15px;
+		float: left;
+		line-height: 12px;
+	}
+
+	nav {
+		margin-top: 15px;
+	}
+
+	.icon-menu {
+		margin-top: 12px;
+		margin-left: 25px;
+		display: inline-block;
+		float: right;
+	}
+
+	nav ul.menu {
+		padding: 0;
+	}
+
+/* 04b. "About-me" page 800+ rules */
+
+	.about img {
+		float: left;
+		margin-top: 0;
+		margin-right: 30px;
+	}
+
+	.about h4 {
+		margin-top: 50px;
+		text-align: left;
+	}
+
+/* 04c. "Contact" page 800+ rules */
+
+	.contact-main {
+		margin: 25px auto;
+		width: 94%;
+	}
+
+	#contact-info {
+		float: left;
+		width: calc(100% - 190px);
+		margin-right: 5px;
+	}
+	#contact-details {
+		width: 163px;
+		float: right;
+	}
+
+
+}
+
+/* 05. Laptops and desktops - The projects split into two columns
+fancy color hover trick */
+
+@media screen and (min-width: 1000px) {
+
+	.main, .about, .contact-main {
+		max-width: 1300px;
+	}
+	
+	.left-column {
+		max-width: 49%;
+		float:left;
+	}
+
+	.right-column {
+		max-width: 49%;
+		float:right;
+	}
+
+	h1.name {
+		margin-top: 0px;
+	}
+
+	h3.title {
+		clear: left;
+		float: left;
+		display: block;
+	}
+
+	.text p {
+		transition: opacity 0.5s ease;
+		opacity: 0.5;
+	}
+
+	.project:hover .text p {
+		transition: opacity 0.5s ease;
+		opacity: 1;
+	}
+
+	/* effect is redundantly applied to .img-wrapper to solve a bug
+	that happens when a parent has a webkit filter that the child
+	doesn't */
+
+	.project:hover, .project:hover .img-wrapper,
+	.project:hover .text, .header-background:hover  {
+		-webkit-filter: grayscale(0%);
+		-webkit-transition: .5s ease-in-out;
+		-moz-filter: grayscale(0%);
+		-moz-transition: .5s ease-in-out;
+		-o-filter: grayscale(0%);
+		-o-transition: .5s ease-in-out;
+		filter:grayscale(0%);
+		transition: .5s ease-in-out;
+
+	} 
+
+	.project, .img-wrapper, .text, .header-background {
+		-webkit-filter: grayscale(50%);
+		-webkit-transition: .5s ease-in-out;
+		-moz-filter: grayscale(50%); 
+		-moz-transition: .5s ease-in-out;
+		-o-filter: grayscale(50%); 
+		-o-transition: .5s ease-in-out;
+		filter:grayscale(50%);
+		transition: .5s ease-in-out;
+	}
+
+}
+
+
+
+
+
+

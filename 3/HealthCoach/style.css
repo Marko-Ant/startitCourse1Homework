@@ -1,0 +1,436 @@
+.banner-container {
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 725px;
+}
+
+.nav-container {
+    font-family: "Open Sans", sans-serif;
+    box-sizing: content-box;
+    padding: 27px;
+    width: 1110px;
+    height: 36px;
+    display: inline-block;
+    text-align: right;
+
+}
+
+#logo {
+    position: relative;
+    bottom: 17px;
+    display: inline-block;
+    float: left;
+}
+
+#logo img {
+    width: 224px;
+}
+
+.main-menu-container {
+    display: inline-block;
+
+}
+
+.main-menu {
+    padding-left: 0;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    color: white;
+
+}
+
+ul.main-menu {
+    display: inline;
+    text-align: center;
+
+}
+
+ul.main-menu li {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 8px 15px;
+}
+
+
+.menu-icons-container {
+    display: inline-block;
+    box-sizing: content-box;
+    width: 82px;
+    float: right;
+    margin-left: 65px;
+}
+
+ul.menu-icons {
+    word-spacing: 6px;
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    color: white;
+    padding-left: 0;
+}
+
+ul.menu-icons li {
+    line-height: 36px;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.nav-container a {
+    color: white;
+}
+
+
+.banner-background {
+    text-align: center;
+    position: relative;
+    height: 725px;
+    background-image: url("http://healthcoach.stylemixthemes.com/wp-content/uploads/2015/09/slider_1_bg_01-min.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    animation: fadein 2s;
+}
+
+.woman-image {
+    position: absolute;
+    left: -235px;
+    top: 110px;
+    opacity:0;
+    animation: fadein 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.headline-container {
+    position: absolute;
+    left: 50.75%;
+    top: 274px;
+    color: white;
+}
+
+h1.headline-greeting {
+    font-family: "Oregano", cursive ;
+    line-height: 72px; 
+    border-width: 0px; 
+    margin: 0px; 
+    padding: 0px; 
+    letter-spacing: 0px; 
+    font-weight: 400; 
+    font-size: 72px;
+    opacity:0;
+    animation: fadein 1s;
+    animation-delay: 1.25s;
+    animation-fill-mode: forwards;
+}
+
+div.animation-wrapper-hg {
+    position: relative;
+    bottom: -50px;
+    animation: glideup 1s;
+    animation-delay: 1.25s;
+    animation-fill-mode: forwards;
+    /* ovaj div wrapper samo sluzi jer ne mogu 2 animacije na jedan element
+    a treba mi posebno glideup i posebno fadein za ovo */
+}
+
+.headline-container p {
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    line-height;
+    text-align: left;
+    opacity:0;
+    animation: fadein 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+
+}
+
+div.animation-wrapper-p {
+    position: relative;
+    bottom: -50px;
+    animation: glideup 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    /* ovaj div wrapper samo sluzi jer ne mogu 2 animacije na jedan element
+    a treba mi posebno glideup i posebno fadein za ovo */
+}
+
+.headline-container button {
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    line-height: 16px;
+    margin-top: 24px;
+    padding: 14px 32px;
+    border: 2px solid white;
+    border-radius: 99px;
+    background-color: rgba(0,0,0,0);
+    opacity:0;
+    animation: fadein 1s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+}
+
+div.animation-wrapper-button {
+    position: relative;
+    bottom: -50px;
+    animation: glideup 1s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    /* ovaj div wrapper samo sluzi jer ne mogu 2 animacije na jedan element
+    a treba mi posebno glideup i posebno fadein za ovo */
+}
+
+.headline-container button:hover {
+    color: #2acd35;
+    background-color: rgba(255,255,255,1);
+
+}
+
+
+.headline-container button:focus { 
+    outline: 0;
+}
+/* poenta ove linije je samo da se izgubi ruzni plavi border kada pritisnem
+dugme, posto po defaultu button elementi to imaju */
+
+.wrapper {
+    text-align: center;
+}
+
+.bump {
+    transform: translate(-50%,-15%);
+    position: absolute;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    height: 139px;
+    width: 139px;
+    z-index: 1;
+}
+
+.mid-page-container {
+    width: 1110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+}
+
+h3.intermezzo-headline {
+    margin-top: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: "Oregano", cursive;
+    font-size: 40px;
+    color: rgb(68,68,68);
+    text-align: center;
+}
+
+.mid-page-container i {
+    color: #2acd35;
+}
+
+.angle-icon-size {
+    font-size: 90px;
+}
+/*sizovanje one zelene strelica na dole ikone*/
+
+.icon-box-container {
+    position: relative;
+    width: 255px;
+    height: 232px;
+    padding: 0 40px;
+    border: 1px solid rgb(225,226,228);
+    border-radius: 3px;
+    display: inline-block;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 50px;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 2px 7px 0px rgba(0,0,0,0);
+    /* senka koja ceka da se aktivira hoverom preko alpha value */
+
+}
+
+.icon-box-inner {
+    position: absolute;
+    width: 173px;
+    transition-property: top;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    /* deo animacije koja vraca glatko kada se odhoveruje */
+    top: 0px;
+}
+
+.green-icons {
+    font-size: 65px;
+    color: #2acd35;
+    line-height: 140px;
+}
+
+.icon-box-inner p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: rgb(68,68,68);
+}
+
+.icon-box-inner span {
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    /* deo animacije koja vraca glatko kada se odhoveruje */
+    opacity: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgb(136,136,136);
+}
+
+.three-dots {
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    /* deo animacije koja vraca glatko kada se odhoveruje */
+    opacity: 1;
+    transform: translate(-50%, 180px);
+    position: absolute;
+    display: inline-block;
+}
+
+.three-dots i {
+    font-size: 32px;
+    color: rgb(136,136,136);
+    line-height: 15px;
+}
+
+.icon-box-container:hover .icon-box-inner {
+    transition-property: top;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    top: -20px;
+
+}
+
+.icon-box-container:hover span {
+    transition-property: opacity;
+    transition-delay: 0.3s;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    opacity: 1;
+
+}
+
+.icon-box-container:hover .three-dots {
+    transition-property: opacity;
+    transition-delay: 0;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 0;
+
+}
+
+.icon-box-container:hover {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.1294);
+}
+
+.prozor {
+    text-align: left;
+    position: relative;
+}
+
+.prozor h1 {
+    font-size: 55px;
+}
+
+.prozor p {
+    font-size: 14px;
+}
+
+.prozor .headline-container {
+    left: 9%;
+    top: 150px;
+}
+
+
+.iza {
+  background-image: url("http://healthcoach.stylemixthemes.com/wp-content/uploads/2015/08/info-block-bg-1-min.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 70vh;
+  width: 100%;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+/* fejd in animacija za razne stvari, ostavio sam beta verzije za svaki slucaj */
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* glide up animacija za naslov i tekst ispod */
+
+@keyframes glideup {
+    from { bottom: -50px; }
+    to   { bottom: 0; }
+}
+
+@-moz-keyframes glideup {
+    from { bottom: -50px; }
+    to   { bottom: 0; }
+}
+
+@-webkit-keyframes glideup {
+    from { bottom: -50px; }
+    to   { bottom: 0; }
+}
+
+@-ms-keyframes glideup {
+    from { bottom: -50px; }
+    to   { bottom: 0; }
+}
+
+@-o-keyframes glideup {
+    from { bottom: -50px; }
+    to   { bottom: 0; } 
